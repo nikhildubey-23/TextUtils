@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {
+            box-sizing: border-box;
+          }
+          
+          /* Style inputs */
+          input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+          }
+          
+          input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+          }
+          
+          input[type=submit]:hover {
+            background-color: #45a049;
+          }
+          
+          /* Style the container/contact section */
+          .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+          }
+          
+          /* Create two columns that float next to eachother */
+          .column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+          }
+          
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+          @media screen and (max-width: 600px) {
+            .column, input[type=submit] {
+              width: 100%;
+              margin-top: 0;
+            }
+          }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/">Text-Utils</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  <a class="nav-link" href="/about">About</a>
+                  <a class="nav-link" href="/contact">Contact</a>
+                </div>
+              </div>
+            </div>
+    
+          </nav>
+    </div>
+    <div class="contact-section container">
+        <div class="container">
+            <div style="text-align:center">
+              <h2>Contact Us</h2>
+              <p>Swing by for a cup of coffee, or leave us a message:</p>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN25uNzkya3M3MHg4Mnd2cHJwNWhmbDEwMXBoM3VpcDJobHczOGVzaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fKnKBZtayVB2o/giphy.gif" style="width:100%">
+              </div>
+              <div class="column">
+                <form action="#">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

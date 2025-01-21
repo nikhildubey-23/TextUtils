@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+        html,
+        body {
+          height: 100%;
+        }
+  
+        body {
+          display: flex;
+          flex-direction: column;
+        }
+        .footer-section-class {
+          margin-top: auto;
+        }
+        .container-footer {
+          width: 100%;
+          max-width: 1600px;
+          margin: 0 auto;
+        }
+  
+        .footer {
+          position: relative;
+          margin-top: 300px;
+          padding: 3rem 0;
+          color: #fff;
+          background: #000;
+          margin-top: auto;
+        }
+  
+        .footer__copyrights {
+          padding-top: 3rem;
+          margin-top: 3rem;
+          border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .footer__copyrights p {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .footer__copyrights p a {
+          margin-left: 0.5rem;
+        }
+        @keyframes parralax {
+          0% {
+            background-position: 260px;
+          }
+          100% {
+            background-position: -10000vw;
+          }
+        }
+        @keyframes moto {
+          0% {
+            transform: translateY(0) rotate(0);
+          }
+          5% {
+            transform: translateY(0) rotate(-5deg);
+          }
+          25% {
+            transform: translateY(60px) rotate(-20deg);
+          }
+          49% {
+            transform: translateY(0) rotate(-1deg);
+          }
+          51% {
+            transform: translateY(0) rotate(1deg);
+          }
+          75% {
+            transform: translateY(60px) rotate(20deg);
+          }
+          80% {
+            transform: translateY(60px) rotate(0deg);
+          }
+          98% {
+            transform: translateY(0) rotate(0);
+          }
+        }
+        @keyframes voiture {
+          0% {
+            transform: rotate(0);
+          }
+          25% {
+            transform: rotate(-5deg);
+          }
+          50% {
+            transform: rotate(0);
+          }
+          75% {
+            transform: rotate(5deg);
+          }
+          100% {
+            transform: rotate(0);
+          }
+        }
+        .footer__parralax {
+          position: absolute;
+          left: 0;
+          top: -300px;
+          height: 300px;
+          width: 100%;
+          overflow: hidden;
+        }
+        .footer__parralax-premierplan {
+          background-position: 260px;
+        }
+        .footer__parralax-trees,
+        .footer__parralax-premierplan,
+        .footer__parralax-secondplan {
+          position: absolute;
+          inset: 0;
+          background-repeat: repeat-x;
+          background-position-y: 100% !important;
+          animation: parralax 600s linear infinite;
+        }
+        .footer__parralax-moto {
+          position: absolute;
+          bottom: 80px;
+          left: 50%;
+          margin-left: -250px;
+          height: 200px;
+          width: 150px;
+          background: url(https://i.ibb.co/JCGfFJd/moto-net.gif);
+          background-repeat: no-repeat;
+          transform-origin: 50% 80%;
+          animation: moto 5s linear infinite;
+        }
+        .footer__parralax-voiture {
+          position: absolute;
+          bottom: 10px;
+          left: 50%;
+          margin-left: 250px;
+          height: 114px;
+          width: 206px;
+          background: url(https://i.ibb.co/0Qhp4DN/voiture-fumee.gif);
+          background-repeat: no-repeat;
+          animation: voiture 1s linear infinite;
+        }
+        .footer__parralax-trees {
+          background-image: url(https://i.ibb.co/nQM4PGJ/arbres.png);
+          bottom: -60px;
+          animation-duration: 1000s;
+        }
+        .footer__parralax-premierplan {
+          background-image: url(https://i.ibb.co/RQhDWbk/premierplanv3.png);
+          animation-duration: 500s;
+        }
+        .footer__parralax-secondplan {
+          background-image: url(https://i.ibb.co/J3TjC4W/second-plan.png);
+          animation-duration: 600s;
+        }
+        @media (max-width: 992px) {
+          .footer-section-class {
+            display: none;
+          }
+        }
+        .text-area-class {
+          height: 80%;
+          overflow-y: scroll;
+          scroll-direction: vertical;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Text-Utils</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/about">About</a>
+              <a class="nav-link" href="/contact">Contact</a>
+            </div>
+          </div>
+        </div>
+
+      </nav>
+
+    <section id="about" class="container mt-5" style="height: 100%; display:flex; gap:1rem; flex-direction:column;">
+        <h2 style="text-align:center; font-size:2rem;">About Text Utils</h2>
+        <p style="font-size:1.5rem;">Welcome to Text Utils, a basic web application designed to analyze text and perform various operations. This project was created by <a href="https://www.github.com/nikhildubey-23">Nikhil Dubey</a>, a solo developer passionate about building useful web application.</p>
+        <p style="font-size:1.5rem;">Text Utils provides three primary operations:</p>
+        <ul>
+          <li style="font-size:1.5rem;"><strong>Upper Case Conversion:</strong> Convert your text to upper case with just a click.</li>
+          <li style="font-size:1.5rem;"><strong>Remove Punctuation:</strong> Remove all punctuation marks from your text with ease.</li>
+          <li style="font-size:1.5rem;"><strong>Character Count:</strong> Get the exact count of characters in your text.</li>
+        </ul>
+        <p style="font-size:1.5rem;">This project was built using Django, a popular Python web framework. The goal of Text Utils is to provide a simple and intuitive interface for text analysis, making it easy for users to perform common operations without the need for extensive technical knowledge.</p>
+        <p style="font-size:1.5rem;">If you have any questions or would like to get in touch with me, please feel free to reach out through my <a href="https://www.github.com/nikhildubey-23">GitHub</a> or <a href="https://www.linkedin.com/in/nikhil-dubey-946b35243/">LinkedIn</a> profiles.</p>
+      </section>
+
+      <div class="footer-section-class">
+        <footer class="footer">
+          <div class="footer__parralax">
+            <div class="footer__parralax-trees"></div>
+            <div class="footer__parralax-moto"></div>
+            <div class="footer__parralax-secondplan"></div>
+            <div class="footer__parralax-premierplan"></div>
+            <div class="footer__parralax-voiture"></div>
+          </div>
+        </footer>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
