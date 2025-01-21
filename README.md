@@ -6,7 +6,7 @@ TextUtils is a web application that provides various text analysis tools. It all
 
 To get started with TextUtils, follow these steps:
 
-1. Clone the repository: `https://github.com/nikhildubey-23/Text-Utils.git`
+1. Clone the repository: `https://github.com/nikhildubey-23/TextUtils.git`
 2. Create a virtual environment: `python -m venv venv`
 3. Activate the virtual environment: `source venv/bin/activate` (on Windows, use `venv\Scripts\activate`)
 4. Install the requirements: `pip install -r requirements.txt`
